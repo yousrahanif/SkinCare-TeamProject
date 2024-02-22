@@ -1,1 +1,0 @@
-# Health_Informatics_Project_Team10
