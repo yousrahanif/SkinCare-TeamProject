@@ -43,43 +43,20 @@ skincare product analysis, treatment suggestions.
 
 # Part 3 - Implementation Plan
 # Project Tasks:
-Environment Setup:
-* Set up a development environment with required tools and frameworks. <br>
-Frontend Development:
-* Design user interface wireframes and mock-ups.
-* Develop frontend components using ReactJS. <br>
- Backend Development:
-* Set up a server using Node.js and Express.js.
-* Implement API endpoints for user authentication and data management. <br>
- Database Integration:
-* Set up a MongoDB database for storing user data and skincare information.
-* Implement data models and schemas. <br>
-User Authentication:
-Integrate Firebase for user authentication and authorization. <br>
- Skincare Product Analysis:
-* Develop an algorithm for ingredient analysis.
-* Integrate ingredient analysis tool into the platform. <br>
- Skin Type Quiz:
-* Design and implement interactive skin type quizzes.
-* Develop backend logic to process quiz results. <br>
- Personalized Recommendations:
-* Research and implement recommendation algorithms.
-* Develop frontend interface for displaying personalized product recommendations. <br>
- Skincare Routine Management:
-* Design user interface for managing skincare routines.
-* Implement backend logic for adding, editing, and deleting skincare products. <br>
- Educational Resources:
-* Curate educational content about skincare ingredients and routines.
-* Develop frontend interface for accessing educational resources. <br>
- Testing and Debugging:
-* Conduct unit tests and integration tests.
-* Debug issues and optimize performance. <br>
- Deployment:
-* Deploy website on Vercel platform.
-* Ensure scalability and reliability of the deployed application. <br>
- User Feedback and Iteration:
-* Gather feedback from users through surveys and usability testing.
-* Iterate on the platform based on user feedback to improve user experience. <br>
+* Environment Setup 
+* Frontend Development
+* Backend Development
+* Database Integration
+* User Authentication
+* Skincare Product Analysis
+* Skin Type Quiz
+* Personalized Recommendations
+* Skincare Routine Management
+* Educational Resources
+* Testing and Debugging
+* Deployment
+* User Feedback and Iteration
+
 # Project Timeline:
 | Weeks | Task                                                                                           |
 |-------|------------------------------------------------------------------------------------------------|
