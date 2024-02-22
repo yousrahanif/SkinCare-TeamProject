@@ -44,42 +44,42 @@ skincare product analysis, treatment suggestions.
 # Part 3 - Implementation Plan
 # Project Tasks:
 &emsp; Environment Setup:
-* Set up a development environment with required tools and frameworks.
+* Set up a development environment with required tools and frameworks. <br>
 &emsp; Frontend Development:
 * Design user interface wireframes and mock-ups.
-* Develop frontend components using ReactJS.
+* Develop frontend components using ReactJS. <br>
 &emsp; Backend Development:
 * Set up a server using Node.js and Express.js.
-* Implement API endpoints for user authentication and data management.
+* Implement API endpoints for user authentication and data management. <br>
 &emsp; Database Integration:
 * Set up a MongoDB database for storing user data and skincare information.
-* Implement data models and schemas.
+* Implement data models and schemas. <br>
 &emsp; User Authentication:
-Integrate Firebase for user authentication and authorization.
+Integrate Firebase for user authentication and authorization. <br>
 &emsp; Skincare Product Analysis:
 * Develop an algorithm for ingredient analysis.
-* Integrate ingredient analysis tool into the platform.
+* Integrate ingredient analysis tool into the platform. <br>
 &emsp; Skin Type Quiz:
 * Design and implement interactive skin type quizzes.
-* Develop backend logic to process quiz results.
+* Develop backend logic to process quiz results. <br>
 &emsp; Personalized Recommendations:
 * Research and implement recommendation algorithms.
-* Develop frontend interface for displaying personalized product recommendations.
+* Develop frontend interface for displaying personalized product recommendations. <br>
 &emsp; Skincare Routine Management:
 * Design user interface for managing skincare routines.
-* Implement backend logic for adding, editing, and deleting skincare products.
+* Implement backend logic for adding, editing, and deleting skincare products. <br>
 &emsp; Educational Resources:
 * Curate educational content about skincare ingredients and routines.
-* Develop frontend interface for accessing educational resources.
+* Develop frontend interface for accessing educational resources. <br>
 &emsp; Testing and Debugging:
 * Conduct unit tests and integration tests.
-* Debug issues and optimize performance.
+* Debug issues and optimize performance. <br>
 &emsp; Deployment:
 * Deploy website on Vercel platform.
-* Ensure scalability and reliability of the deployed application.
+* Ensure scalability and reliability of the deployed application. <br>
 &emsp; User Feedback and Iteration:
 * Gather feedback from users through surveys and usability testing.
-* Iterate on the platform based on user feedback to improve user experience.
+* Iterate on the platform based on user feedback to improve user experience. <br>
 # Project Timeline:
 | Weeks | Task                                                                                           |
 |-------|------------------------------------------------------------------------------------------------|
