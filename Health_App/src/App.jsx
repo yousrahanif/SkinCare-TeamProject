@@ -5,8 +5,9 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import Quiz from './components/Quiz/Quiz'
 import HealthFoodCart from './components/HealthFoodCart/HealthFoodCart'
-import Product from './components/Product/Product'
 import SkinCare from './components/SkinCare/SkinCare'
+import Products from './components/Products/Products'
+import SkinTypes from './components/SkinTypes/SkinTypes'
 
 
 
@@ -21,7 +22,9 @@ function App() {
 
     
     <HealthFoodCart></HealthFoodCart>
+    <Products></Products>
   
+  <SkinTypes></SkinTypes>
 
    
     </>
