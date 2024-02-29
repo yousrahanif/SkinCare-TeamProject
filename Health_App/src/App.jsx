@@ -8,6 +8,10 @@ import HealthFoodCart from './components/HealthFoodCart/HealthFoodCart'
 import SkinCare from './components/SkinCare/SkinCare'
 import Products from './components/Products/Products'
 import SkinTypes from './components/SkinTypes/SkinTypes'
+import AppointmentForm from './components/Appointment/AppointmentForm'
+import ClogCheckingComponent from './components/ClogCheckingComponent/ClogCheckingComponent'
+import Login from './components/Login/Login'
+import SignUp from './components/SignUp/SignUp'
 
 
 
@@ -25,6 +29,12 @@ function App() {
     <Products></Products>
   
   <SkinTypes></SkinTypes>
+  <AppointmentForm></AppointmentForm>
+  <ClogCheckingComponent></ClogCheckingComponent>
+  <SignUp></SignUp>
+  <Login></Login>
+  {/* <Login></Login> */}
+  
 
    
     </>
