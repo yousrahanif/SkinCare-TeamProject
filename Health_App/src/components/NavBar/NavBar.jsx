@@ -1,9 +1,10 @@
 import React from 'react';
+import './NavBar.css'
 
 const NavBar = () => {
     return (
       
-        <div className="navbar bg-sky-100 text-4xl">
+        <div className="navbar bg-sky-200 text-4xl">
        <div className="flex-1"> 
 
        <div className="navbar-start">
@@ -11,17 +12,22 @@ const NavBar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-100 rounded-box w-52 ">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-sky-200 rounded-box w-52">
+             <li id="link">
+             <li ><a id="link1">Homepage</a></li>
+              <li><a id="link2"> Portfolio</a></li>
+              <li><a id="link3">About</a></li>
+              <li><a id="link4">About</a></li>
+              <li><a id="link5">About</a></li>
+              <li><a id="link6">About</a></li>
+             </li>
             </ul>
           </div>
         </div>
        </div>
 
        <div className="navbar-center">
-    <a className="btn btn-ghost text-xl text-blue-400 font-weight: 900">SkinSync Pro</a>
+    <a id ="header" className="btn btn-ghost text-xl text-blue-400 font-weight:900">SkinSync Pro</a>
   </div>
 
   <div className="navbar-end">

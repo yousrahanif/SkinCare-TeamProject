@@ -1,4 +1,5 @@
 import React from "react";
+import './HealthFoodCart.css'
 import {
   BarChart,
   Bar,
@@ -78,7 +79,9 @@ const data = [
 
 const HealthFoodCart = () => {
   return (
-    <BarChart
+   <div className="barchart">
+    
+     <BarChart 
       width={1000}
       height={500}
       data={data}
@@ -86,7 +89,8 @@ const HealthFoodCart = () => {
         top: 50,
         right: 0,
         left: 10,
-        bottom: 5
+        bottom: 5 
+         
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
@@ -101,6 +105,7 @@ const HealthFoodCart = () => {
       <Bar dataKey="Vitamins" fill="lightBlue" />
       <Bar dataKey="Minerals" fill="gray" />
     </BarChart>
+   </div>
   );
 }
 
