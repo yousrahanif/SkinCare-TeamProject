@@ -4,14 +4,52 @@
 
 
 #link1{
-    font-size: 30px;
-    color: rgb(79, 203, 252);
+    font-size: 20px;
+    
+    
 }
 
 #link2{
-    font-size: 30px;
+    font-size: 20px;
+    
 }
 
 #link3{
-    font-size: 30px;
+    font-size: 20px;
+  
+}
+#link4{
+    font-size: 20px;
+  
+}
+#link5{
+    font-size: 20px;
+  
+}
+#link6{
+    font-size: 20px;
+  
+}
+#link7{
+    font-size: 20px;
+  
+}
+.n{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20%; 
+
+   
+}
+
+.n2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+   
+}
+
+.n3{
+   margin-left: 5%;
+   margin-right: 5%;
 }

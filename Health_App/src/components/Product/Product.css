@@ -8,16 +8,23 @@
   
   .product {
     flex: 0 0 calc(33.33% - 20px); /* Each product takes up 33.33% of the container width with some margin */
-    margin: 20px;
+    margin-top: 5%;
+    margin-left: 15%;
     padding: 10px;
     text-align: center; /* Align text in the center */
+    font-size: 30px;
+    width: 500px;
+    height: 700px;
+   
+    border-radius: 8px;
   }
   
   .product img {
     display: block;
     margin: 0 auto; /* Center the image horizontally */
-    width: 150px; /* Set a fixed width for all images */
-    height: 150px; /* Set a fixed height for all images */
+    width: 400px; /* Set a fixed width for all images */
+    height: 400px; /* Set a fixed height for all images */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
+    padding: 10px;
   }
   

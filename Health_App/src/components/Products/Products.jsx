@@ -19,7 +19,7 @@ const Products = () => {
 
     return (
         <div>
-            <h2 className='text-center'>Skincare Products</h2>
+            <h2 className='text-center text-6xl mb-9 p-6'>Skincare Products</h2>
             <div className='products-container'>
                 <CategoryProducts category="Cleansers" products={products.cleansers} />
                 <CategoryProducts category="Moisturizers" products={products.moisturizers} />
@@ -31,7 +31,7 @@ const Products = () => {
 
 const CategoryProducts = ({ category, products }) => {
     return (
-        <div>
+        <div  className="products">
             {products.map(product => (
                 <Product
                     key={product.resource.id}
