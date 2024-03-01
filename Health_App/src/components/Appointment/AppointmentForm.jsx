@@ -4,14 +4,13 @@ import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-const AppointmentForm = () => {
+const AppointmentForm = ({ updateAppointments }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [dob, setDob] = useState(new Date());
   const [doctor, setDoctor] = useState('');
   const [concerns, setConcerns] = useState('');
-  const [bookedTimes, setBookedTimes] = useState([]); 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,7 +24,6 @@ const AppointmentForm = () => {
         concerns
       });
       console.log('Response from server:', response.data);
-      setBookedTimes([...bookedTimes, dob]);
       // Reset form fields after submission
       setName('');
       setEmail('');
@@ -39,6 +37,8 @@ const AppointmentForm = () => {
         title: 'Success!',
         text: 'Appointment submitted successfully!',
       });
+      // Update appointments after submission
+      updateAppointments();
     } catch (error) {
       console.error('Error submitting appointment:', error);
       // Show error message with SweetAlert2

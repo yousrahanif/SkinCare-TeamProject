@@ -1,12 +1,15 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Redirect
 import { AuthContext } from '../../providers/AuthProviders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+
     const authContext = useContext(AuthContext);
-    console.log("Auth Context:", authContext); 
+    const [redirectToAppointments, setRedirectToAppointments] = useState(false); // State for redirection
 
     const { signIn, signInWithGoogle } = useContext(AuthContext);
 
@@ -23,6 +26,7 @@ const Login = () => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 form.reset();
+                setRedirectToAppointments(true); // Redirect after successful login
             })
             .catch(error => {
                 console.log(error)
@@ -34,10 +38,16 @@ const Login = () => {
         .then(result => {
             const loggedUser = result.user;
             console.log(loggedUser);
+            setRedirectToAppointments(true); // Redirect after successful login
         })
         .catch(error => {
             console.log(error)
         })
+    }
+
+    // Redirect to appointments page if redirectToAppointments is true
+    if (redirectToAppointments) {
+        navigate('/viewAppointments');
     }
 
     return (
@@ -47,7 +57,7 @@ const Login = () => {
                     <h1 className="text-5xl font-bold">Please Login !</h1>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form onSubmit={handleLogin} className="card-body">
+                <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
@@ -74,7 +84,7 @@ const Login = () => {
                         </div>
                     </form>
                     <p className='mb-4 ml-8'>
-                        <Link to="/register" className="label-text-alt link link-hover">
+                        <Link to="/signup" className="label-text-alt link link-hover">
                             New to Patient? Please Register
                         </Link>
                     </p>

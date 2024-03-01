@@ -12,6 +12,7 @@ import AppointmentForm from './components/Appointment/AppointmentForm'
 import ClogCheckingComponent from './components/ClogCheckingComponent/ClogCheckingComponent'
 import Login from './components/Login/Login'
 import SignUp from './components/SignUp/SignUp'
+import AppointmentList from './components/Appointment/AppointmentList'
 
 
 
@@ -31,8 +32,9 @@ function App() {
   <SkinTypes></SkinTypes>
   <AppointmentForm></AppointmentForm>
   <ClogCheckingComponent></ClogCheckingComponent>
-  <SignUp></SignUp>
+  {/* <SignUp></SignUp>
   <Login></Login>
+  <AppointmentList></AppointmentList> */}
   {/* <Login></Login> */}
   
 
