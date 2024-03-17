@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './NavBar.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProviders';
+import UserProfile from '../Profile/UserProfile';
 
 const NavBar = () => {
+  const { user, logOut, isAdmin } = useContext(AuthContext);
+ 
     return (
       
         <div className="navbar bg-sky-200 text-4xl">
@@ -22,13 +26,22 @@ const NavBar = () => {
               <li><a id="link5">Skin Care Routin</a></li>
               <li><a id="link6">Check Clog Poring Ingredients</a></li>
               <li ><a id="link7">Clinical Research</a></li>
-              <li> <Link to="/login">Login</Link></li>
+              
+
              <li> <Link to="/pore">Ingredient Check</Link></li>
              <li> <Link to="/quiz">Skin Quiz</Link></li>
-             <li> <Link to="/makeAppointments">Appointment</Link></li>
-             <li> <Link to="/viewAppointments">View Appointments</Link></li>
+
+
+             {isAdmin && <li><Link to="/admin/appointments">All Appointments</Link></li>} {/* Only admin can see */}
+              {user && !isAdmin && <li><Link to="/make">Make Appointment</Link></li>} {/* Non-admin users */}
+              {user && !isAdmin && <li><Link to="/viewAppointments">View Appointments</Link></li>} {/* Non-admin users */}
+             {/* {user && <li>  <Link to="/make">Make Appointment</Link></li>}
+             {user && <li> <Link to="/viewAppointments">View Appointments</Link></li>} */}
+
 
              </li>
+
+            
             </ul>
           </div>
         </div>
@@ -40,7 +53,7 @@ const NavBar = () => {
    </div>
    <div className='n2'>
    <a className='text-2xl'>Registration</a>
-    <a className='text-2xl'>Login</a>
+    <a className='text-2xl'> Login</a>
     <a className='text-2xl'>Appoinment</a>
    </div>
   </div>
@@ -57,12 +70,18 @@ const NavBar = () => {
       <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
         <li>
           <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
+          {user ? <UserProfile email={user.email} /> : null}
+                  
           </a>
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        {/* <li><a>Settings</a></li> */}
+        {/* <li><a>Logout</a></li> */}
+        {user?.uid ?
+                <li><button className="logout-btn" onClick={logOut}>Logout</button></li> 
+                :
+                <li> <Link to="/login">Login</Link></li>
+                
+              }
       </ul>
     </div>
   </div>
