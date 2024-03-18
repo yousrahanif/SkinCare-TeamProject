@@ -10,7 +10,11 @@ const init = async () => {
         port: 12345
     });
 
-    const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.sdwsth3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+    // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.sdwsth3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+    const username = "healthApp";
+const password = "XXekEBl4Dndeviao";
+const uri = `mongodb+srv://${username}:${password}@cluster0.sdwsth3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+
     
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
