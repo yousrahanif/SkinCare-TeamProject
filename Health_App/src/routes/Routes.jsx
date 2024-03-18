@@ -8,7 +8,11 @@ import SignUp from "../components/SignUp/SignUp";
 import ClogCheckingComponent from "../components/ClogCheckingComponent/ClogCheckingComponent";
 import Quiz from "../components/Quiz/Quiz";
 import AppointmentList from "../components/Appointment/AppointmentList";
-import AppointmentForm from "../components/Appointment/AppointmentForm";
+// import AppointmentForm from "../components/Appointment/AppointmentForm";
+import MakeAppointment from "../components/Appointment/MakeAppointment";
+import PrivateRoute from "./PrivateRoute";
+import AllAppointments from "../components/Appointment/AllAppointments";
+
 
 const router = createBrowserRouter([
     {
@@ -33,18 +37,30 @@ const router = createBrowserRouter([
           element: <Quiz></Quiz>
 
         },
+        {
+          path: '/admin/appointments', 
+          element: <AllAppointments></AllAppointments>
+        },
+     
        
         
-          {
-            path: '/makeAppointments', 
-            element: <AppointmentForm></AppointmentForm>
+          // {
+          //   path: '/makeAppointments', 
+          //   element: <AppointmentForm></AppointmentForm>
   
-          },
-          {
-            path: '/viewAppointments', 
-            element: <AppointmentList></AppointmentList>
+          // },
+          // {
+          //   path: '/viewAppointments', 
+          //   element: <AppointmentList></AppointmentList>
   
+          // },
+          { path: '/viewAppointments', element: <PrivateRoute><AppointmentList /></PrivateRoute> },
+
+          {
+            path: '/make', 
+            element: <PrivateRoute><MakeAppointment></MakeAppointment></PrivateRoute>
           }
+
 
 
         
