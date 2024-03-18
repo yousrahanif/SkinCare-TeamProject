@@ -85,7 +85,7 @@ const AppointmentList = () => {
     <div className="appointment-list-container">
       <h2 className='mt-4 appointment-list-title'>Your Appointments</h2>
       {appointments.length === 0 ? (
-        <p>You have no current appointments.
+        <p className='text-center text-2xl'>You have no current appointments.
          <span>  <Link to="/make" style={{ color: 'blue' }}>Make Appointments</Link>
          </span>
         </p>

@@ -1,11 +1,13 @@
 import React from 'react';
 import './MorningCare.css'
+import { Link } from 'react-router-dom';
+
 
 const MorningSkinCare = () => {
     return (
         <div>
             <div className='ml-20 text-xl'>
-                <h2 className='text-5xl text-center p-8 text-blue-400'>Your Morning Skin Care Order </h2>
+                <h2 className='text-4xl text-center p-8 text-blue-400'>Your Morning Skin Care Order </h2>
                 <p className='text-3xl ml-5'>The right morning routine will help your skin feel calm and hydrated all day long. </p>
                 <div className='mt-5 p-5 mb-5'>
                 <h3 className='text2'><strong>Step 1: Cleanser</strong></h3>
@@ -95,7 +97,9 @@ const MorningSkinCare = () => {
                 </div>
 
 
+           
             </div>
+            <button className="button-center"> <Link to="/skinCareRoutin">Your Skin Care Routine </Link> </button>
         </div>
     );
 };

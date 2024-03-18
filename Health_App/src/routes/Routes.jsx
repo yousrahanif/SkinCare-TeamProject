@@ -12,6 +12,12 @@ import AppointmentList from "../components/Appointment/AppointmentList";
 import MakeAppointment from "../components/Appointment/MakeAppointment";
 import PrivateRoute from "./PrivateRoute";
 import AllAppointments from "../components/Appointment/AllAppointments";
+import SkinTypes from "../components/SkinTypes/SkinTypes";
+import SkinCare from "../components/SkinCare/SkinCare";
+import Products from "../components/Products/Products";
+import NightSkinCare from "../components/NightSkinCare/NightSkinCare";
+import MorningSkinCare from "../components/MorningCare/MorningSkinCare";
+import Home from "../components/Home/Home";
 
 
 const router = createBrowserRouter([
@@ -19,6 +25,11 @@ const router = createBrowserRouter([
       path: "/",
       element: <Main></Main>,
       children: [
+        {
+          path: '/',
+          element: <Home></Home>
+
+        },
         {
             path: '/login',
             element: <Login></Login>
@@ -59,6 +70,26 @@ const router = createBrowserRouter([
           {
             path: '/make', 
             element: <PrivateRoute><MakeAppointment></MakeAppointment></PrivateRoute>
+          },
+          {
+            path:'/skinTypes', 
+            element: <SkinTypes></SkinTypes>
+          },
+          {
+            path:'/skinCareRoutin', 
+            element: <SkinCare></SkinCare>
+          },
+          {
+            path:'/product', 
+            element: <Products></Products>
+          },
+          {
+            path:'/morningCare', 
+            element: <MorningSkinCare></MorningSkinCare>
+          },
+          {
+            path:'/nightCare', 
+            element: <NightSkinCare></NightSkinCare>
           }
 
 

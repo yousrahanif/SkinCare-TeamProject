@@ -9,7 +9,7 @@ const NavBar = () => {
  
     return (
       
-        <div className="navbar bg-sky-200 text-4xl">
+        <div className="navbar bg-sky-200 text-4xl  ">
        <div className="flex-1"> 
 
        <div className="navbar-start">
@@ -19,7 +19,7 @@ const NavBar = () => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-sky-200 rounded-box w-60">
              <li id="link">
-             <li ><a id="link1">Homepage</a></li>
+             {/* <li ><a id="link1">Homepage</a></li>
               <li><a id="link2"> Products</a></li>
               <li><a id="link3">Check Your Skin Type</a></li>
               <li><a id="link4">Know Your Skin</a></li>
@@ -29,12 +29,18 @@ const NavBar = () => {
               
 
              <li> <Link to="/pore">Ingredient Check</Link></li>
-             <li> <Link to="/quiz">Skin Quiz</Link></li>
+             <li> <Link to="/quiz">Skin Quiz</Link></li> */}
+              <Link className="link1"  to="/">Home</Link>
+             <Link className="link1" to="/skinTypes">Know Your Skin</Link>
+             <Link className="link1" to="/skinCareRoutin">Your Skin Care Routin</Link>
+             <Link className="link1" to="/quiz">Your Skin Quiz</Link>
+             <Link className="link1" to="/product">Products for Your Skin</Link>
+             <Link className="link1" to="/pore">Check Ingredients</Link>
 
 
-             {isAdmin && <li><Link to="/admin/appointments">All Appointments</Link></li>} {/* Only admin can see */}
-              {user && !isAdmin && <li><Link to="/make">Make Appointment</Link></li>} {/* Non-admin users */}
-              {user && !isAdmin && <li><Link to="/viewAppointments">View Appointments</Link></li>} {/* Non-admin users */}
+             {isAdmin && <Link className="link1" to="/admin/appointments">All Appointments</Link>} {/* Only admin can see */}
+              {user && !isAdmin && <Link className="link1" to="/make">Make Appointment</Link>} {/* Non-admin users */}
+              {user && !isAdmin && <Link className="link1" to="/viewAppointments">View Appointments</Link>} {/* Non-admin users */}
              {/* {user && <li>  <Link to="/make">Make Appointment</Link></li>}
              {user && <li> <Link to="/viewAppointments">View Appointments</Link></li>} */}
 
@@ -48,14 +54,10 @@ const NavBar = () => {
        </div>
 
        <div className="n">
-   <div>
-   <h2 id ="header" className="btn btn-ghost text-6xl text-blue-400 font-weight:800">SkinSync Pro</h2>
+   <div className='container'>
+   <h2 id ="header" className="btn btn-ghost text-4xl text-blue-400 font-weight:400 text-center">SkinSync</h2>
    </div>
-   <div className='n2'>
-   <a className='text-2xl'>Registration</a>
-    <a className='text-2xl'> Login</a>
-    <a className='text-2xl'>Appoinment</a>
-   </div>
+   
   </div>
 
   <div className="n3">
@@ -69,7 +71,7 @@ const NavBar = () => {
       </div>
       <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
         <li>
-          <a className="justify-between">
+          <a className="justify-between link1">
           {user ? <UserProfile email={user.email} /> : null}
                   
           </a>
@@ -77,9 +79,9 @@ const NavBar = () => {
         {/* <li><a>Settings</a></li> */}
         {/* <li><a>Logout</a></li> */}
         {user?.uid ?
-                <li><button className="logout-btn" onClick={logOut}>Logout</button></li> 
+                <li><button className="logout-btn link1" onClick={logOut}>Logout</button></li> 
                 :
-                <li> <Link to="/login">Login</Link></li>
+                 <Link className="link1" to="/login">Login</Link>
                 
               }
       </ul>

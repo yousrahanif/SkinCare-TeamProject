@@ -1,10 +1,15 @@
 #header{
-    font-size: 50px;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 
-#link1{
+.link1{
     font-size: 20px;
+    padding: 2%;
+    margin: 5px;
     
     
 }
@@ -33,23 +38,46 @@
 #link7{
     font-size: 20px;
   
-}
-.n{
+} 
+ .n{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20%; 
+    grid-gap: 100%; 
 
    
 }
-
+/*
 .n2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
    
-}
+} */
 
 .n3{
    margin-left: 5%;
    margin-right: 5%;
-}
+} 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    width: 100%;
+
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+ 
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Additional styles if needed */
+  
