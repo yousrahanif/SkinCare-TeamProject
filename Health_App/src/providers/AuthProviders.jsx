@@ -11,6 +11,8 @@ const googleAuthProvider = new GoogleAuthProvider();
 const AuthProviders = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [isAdmin, setIsAdmin] = useState(false); // New state for admin status
+
 
     const createUser = (email, password) =>{
         return createUserWithEmailAndPassword(auth, email, password);
@@ -34,7 +36,14 @@ const AuthProviders = ({children}) => {
             console.log('auth state change', currentUser);
             setUser(currentUser);
             setLoading(false);
+
+            if (currentUser && currentUser.email === 'admin@admin.com') {
+                setIsAdmin(true);
+            } else {
+                setIsAdmin(false);
+            }
         });
+       
 
         return () =>{
             unsubscribe();
@@ -45,6 +54,7 @@ const AuthProviders = ({children}) => {
     const authInfo = {
         user,
         loading,
+        isAdmin,
         createUser,
         signIn,
         signInWithGoogle,
@@ -59,3 +69,7 @@ const AuthProviders = ({children}) => {
 };
 
 export default AuthProviders;
+
+AuthProviders.js
+
+
