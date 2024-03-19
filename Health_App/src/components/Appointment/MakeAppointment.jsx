@@ -22,7 +22,7 @@ const MakeAppointment = () => {
     event.preventDefault();
     try {
       const utcAppointmentDate = appointmentDate.toISOString();
-      const response = await axios.post('http://localhost:12345/appointments', {
+      const response = await axios.post('https://health-app-server.vercel.app/appointments', {
         name,
         email: user.email, // Use the user's email from AuthContext
         phoneNumber,

@@ -6,7 +6,7 @@ const DeleteConfirmationModal = ({ appointmentId, onClose }) => {
   const handleDelete = async () => {
     try {
       // Send a request to delete the appointment from the backend
-      await axios.delete(`http://localhost:12345/appointments/${appointmentId}`);
+      await axios.delete(`https://health-app-server.vercel.app/appointments/${appointmentId}`);
       
       // If deletion is successful, close the modal
       onClose();
@@ -55,7 +55,7 @@ export default DeleteConfirmationModal;
 // const DeleteConfirmationModal = ({ appointmentId, onClose }) => {
 //   const handleDelete = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${appointmentId}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${appointmentId}`);
 //       onClose();
 //       Swal.fire({
 //         icon: 'success',

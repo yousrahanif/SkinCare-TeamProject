@@ -40,7 +40,7 @@ const EditAppointmentModal = ({ appointment, onClose, onUpdate }) => {
     }
     
     try {
-      const response = await axios.put(`http://localhost:12345/appointments/${appointment._id}`, updatedAppointment);
+      const response = await axios.put(`https://health-app-server.vercel.app/appointments/${appointment._id}`, updatedAppointment);
       onClose();
   
       // Check if the update was successful before showing the success message
@@ -153,7 +153,7 @@ export default EditAppointmentModal;
 //     }
     
 //     try {
-//       const response = await axios.put(`http://localhost:12345/appointments/${appointment._id}`, updatedAppointment);
+//       const response = await axios.put(`https://health-app-server.vercel.app/appointments/${appointment._id}`, updatedAppointment);
 //       onClose();
   
 //       // Check if the update was successful before showing the success message
@@ -265,7 +265,7 @@ export default EditAppointmentModal;
 //     }
     
 //     try {
-//       const response = await axios.put(`http://localhost:12345/appointments/${appointment._id}`, updatedAppointment);
+//       const response = await axios.put(`https://health-app-server.vercel.app/appointments/${appointment._id}`, updatedAppointment);
 //       onClose();
   
 //       // Check if the update was successful before showing the success message

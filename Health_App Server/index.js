@@ -19,7 +19,7 @@ const uri = `mongodb+srv://${username}:${password}@cluster0.sdwsth3.mongodb.net/
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     try {
-        await client.connect();
+        // await client.connect();
         const db = client.db('healthApp');
         const appointmentsCollection = db.collection('appointments');
 

@@ -6,7 +6,12 @@ import UserProfile from '../Profile/UserProfile';
 
 const NavBar = () => {
   const { user, logOut, isAdmin } = useContext(AuthContext);
- 
+   // Initialize useHistory hook
+
+  const handleLogout = async () => {
+    await logOut(); // Logout user
+    window.location.href = '/login';  // Redirect to login page after logout
+  };
     return (
       
         <div className="navbar bg-sky-200 text-4xl  ">
@@ -79,7 +84,7 @@ const NavBar = () => {
         {/* <li><a>Settings</a></li> */}
         {/* <li><a>Logout</a></li> */}
         {user?.uid ?
-                <li><button className="logout-btn link1" onClick={logOut}>Logout</button></li> 
+                <li><button className="logout-btn link1" onClick={handleLogout}>Logout</button></li> 
                 :
                  <Link className="link1" to="/login">Login</Link>
                 

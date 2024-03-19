@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './AllAppointments.css'; // Import CSS file
 
-const API_BASE_URL = 'http://localhost:12345'; // Define the base URL for your backend API
+const API_BASE_URL = 'https://health-app-server.vercel.app'; // Define the base URL for your backend API
 
 const AllAppointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -27,8 +27,8 @@ const AllAppointments = () => {
   console.log('Appointments:', appointments); // Log appointments to see its current value
 
   return (
-    <div className="appointments-container"> {/* Container for centering */}
-      <h2>All Appointments</h2>
+    <div className="appointments-container text-center"> {/* Container for centering */}
+      <h2 className='text-3xl text-center'>All Appointments</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

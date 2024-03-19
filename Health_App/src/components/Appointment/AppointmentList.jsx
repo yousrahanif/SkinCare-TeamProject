@@ -23,7 +23,7 @@ const AppointmentList = () => {
     try {
       if (authContext.user) {
         const userEmail = authContext.user.email;
-        const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+        const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 
 
 
@@ -55,7 +55,7 @@ const AppointmentList = () => {
 
   const handleDeleteConfirmation = async () => {
     try {
-      await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+      await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
       setDeleteModalOpen(false);
     } catch (error) {
@@ -140,7 +140,7 @@ export default AppointmentList;
 //     try {
 //       if (authContext.user) {
 //         const userEmail = authContext.user.email;
-//         const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//         const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //         setAppointments(response.data);
 //       }
 //     } catch (error) {
@@ -164,7 +164,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -246,7 +246,7 @@ export default AppointmentList;
 //       try {
 //         if (authContext.user) {
 //           const userEmail = authContext.user.email;
-//           const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//           const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //           setAppointments(response.data);
 //         }
 //       } catch (error) {
@@ -269,7 +269,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -350,7 +350,7 @@ export default AppointmentList;
 //       try {
 //         if (authContext.user) {
 //           const userEmail = authContext.user.email;
-//           const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//           const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //           setAppointments(response.data);
 //         }
 //       } catch (error) {
@@ -373,7 +373,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -447,7 +447,7 @@ export default AppointmentList;
 //       try {
 //         if (authContext.user) {
 //           const userEmail = authContext.user.email;
-//           const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//           const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //           setAppointments(response.data);
 //         }
 //       } catch (error) {
@@ -466,7 +466,7 @@ export default AppointmentList;
 //   const handleDelete = async (appointment) => {
 //     setSelectedAppointment(appointment);
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${appointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${appointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appt => appt._id !== appointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -476,7 +476,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -488,7 +488,7 @@ export default AppointmentList;
 //     try {
 //       if (authContext.user) {
 //         const userEmail = authContext.user.email;
-//         const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//         const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //         setAppointments(response.data);
 //       }
 //     } catch (error) {
@@ -545,7 +545,7 @@ export default AppointmentList;
 //       try {
 //         if (authContext.user) {
 //           const userEmail = authContext.user.email;
-//           const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//           const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //           setAppointments(response.data);
 //         }
 //       } catch (error) {
@@ -565,7 +565,7 @@ export default AppointmentList;
 //   const handleDelete = async (appointment) => {
 //     setSelectedAppointment(appointment);
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${appointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${appointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appt => appt._id !== appointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -576,7 +576,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
@@ -633,7 +633,7 @@ export default AppointmentList;
 //       try {
 //         if (authContext.user) {
 //           const userEmail = authContext.user.email;
-//           const response = await axios.get(`http://localhost:12345/appointments?email=${userEmail}`);
+//           const response = await axios.get(`https://health-app-server.vercel.app/appointments?email=${userEmail}`);
 //           setAppointments(response.data);
 //         }
 //       } catch (error) {
@@ -656,7 +656,7 @@ export default AppointmentList;
 
 //   const handleDeleteConfirmation = async () => {
 //     try {
-//       await axios.delete(`http://localhost:12345/appointments/${selectedAppointment._id}`);
+//       await axios.delete(`https://health-app-server.vercel.app/appointments/${selectedAppointment._id}`);
 //       setAppointments(prevAppointments => prevAppointments.filter(appointment => appointment._id !== selectedAppointment._id));
 //       setDeleteModalOpen(false);
 //     } catch (error) {
