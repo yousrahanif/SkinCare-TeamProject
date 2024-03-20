@@ -1,17 +1,17 @@
-.product-container {
+/* .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 960px; /* Adjust the maximum width as needed */
+    justify-content: center; 
+    margin: 0 auto; 
+    max-width: 960px; 
   }
   
   .product {
-    flex: 0 0 calc(33.33% - 20px); /* Each product takes up 33.33% of the container width with some margin */
+    flex: 0 0 calc(33.33% - 20px); 
     margin-top: 5%;
     margin-left: 15%;
     padding: 10px;
-    text-align: center; /* Align text in the center */
+    text-align: center; 
     font-size: 30px;
     width: 500px;
     height: 700px;
@@ -21,10 +21,50 @@
   
   .product img {
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    width: 400px; /* Set a fixed width for all images */
-    height: 400px; /* Set a fixed height for all images */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin: 0 auto; 
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
     padding: 10px;
   }
-  
+   */
+   .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minimum and maximum width of each column */
+    grid-gap: 10px;
+    justify-items: center; /* Center items horizontally within the grid */
+}
+
+.product {
+    flex: 0 0 calc(33.33% - 20px); /* Remove this line */
+    margin-top: 5%;
+    margin-left: 15%; /* Remove this line */
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    max-width: 300px; /* Adjust the maximum width of the product */
+    height: auto; /* Let the height adjust based on content */
+    border-radius: 8px;
+}
+
+.product img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Ensure aspect ratio is maintained */
+    padding: 10px;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .products-container {
+      grid-template-columns: repeat(3, 1fr); /* Show three products per row on smaller devices */
+  }
+}
+
+/* Media query for even smaller devices */
+@media screen and (max-width: 480px) {
+    .products-container {
+        grid-template-columns: 1fr; /* Show one product per row on even smaller devices */
+    }
+}

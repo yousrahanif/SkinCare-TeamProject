@@ -67,13 +67,15 @@ p {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
 }
 
 .feature {
-  flex: 0 1 30%;
+  flex: 0 1 30%; /* Adjust width of feature */
   text-align: center;
+  margin-bottom: 20px; /* Add margin between features */
 }
 
 .feature img {
@@ -92,4 +94,27 @@ footer {
 
 footer p {
   font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .hero img {
+    max-width: 100%; /* Make hero image responsive */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-basis: 45%; /* Adjust width of feature for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .feature {
+    flex-basis: 100%; /* Adjust width of feature for small screens */
+  }
 }

@@ -1,4 +1,38 @@
-#header{
+/* NavBar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Center title and avatar */
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#header {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.link1 {
+    font-size: 1.6rem;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar .flex-1 {
+        width: 100%;
+    }
+}
+
+
+
+/* #header{
     font-size: 90px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -46,13 +80,7 @@
 
    
 }
-/*
-.n2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-   
-} */
+
 
 .n3{
    margin-left: 5%;
@@ -79,5 +107,5 @@
     text-align: center;
   }
   
-  /* Additional styles if needed */
-  
+
+   */

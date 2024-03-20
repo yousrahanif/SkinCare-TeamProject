@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import './Quiz.css';
 import Swal from 'sweetalert2';
@@ -18,7 +20,7 @@ const Quiz = () => {
       id: 3,
       text: 'How does your skin usually look a few hours after washing your face?',
       options: [
-        'Flakey or rough',
+        'Flaky or rough',
         'Generally normal',
         'Shiny or oily, especially in the T-zone',
         'All of the above',
@@ -128,7 +130,7 @@ const Quiz = () => {
 
   return (
     <div className="quiz-container">
-      <h1 id="h1">Skin Type Quiz</h1>
+      <h1>Skin Type Quiz</h1>
       {currentQuestion < questions.length && (
         <div className="question-container">
           <p className='question'>{questions[currentQuestion].text}</p>

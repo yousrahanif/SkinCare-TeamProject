@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 
@@ -47,7 +46,7 @@ const Home = () => {
           </div>
         </section>
         <section className="features">
-        <div className="feature">
+          <div className="feature">
             <img src="https://www.advancedderm.com/getattachment/About-Us/News/The-Top-4-Reasons-to-See-an-Aesthetician-1/Capture-2.JPG?width=315&height=215" alt="Patient and Doctor" />
             <h3 className='mt-4 text-3xl'>Consultations</h3>
             <p>Receive expert advice tailored to your skin type and concerns.</p>
@@ -72,3 +71,4 @@ const Home = () => {
 }
 
 export default Home;
+
