@@ -41,6 +41,10 @@ const NavBar = () => {
              <Link className="link1" to="/quiz">Your Skin Quiz</Link>
              <Link className="link1" to="/product">Products for Your Skin</Link>
              <Link className="link1" to="/pore">Check Ingredients</Link>
+            
+             {/* <Link className="link1" to="/health">Healthy Food Cart</Link> */}
+             <Link className="link1" to="/food">Healthy Food </Link>
+             <Link className="link1" to="/research">Research</Link>
 
 
              {isAdmin && <Link className="link1" to="/admin/appointments">All Appointments</Link>} {/* Only admin can see */}

@@ -1,0 +1,54 @@
+.skin-health {
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .title-section {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  .title-section h1 {
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .img-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .img-section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20%;
+  }
+  
+  .intro-section {
+    margin-bottom: 30px;
+  }
+  
+  .intro-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .how-food-affects-section {
+    margin-bottom: 30px;
+  }
+  
+  .how-food-affects-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .how-food-affects-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  

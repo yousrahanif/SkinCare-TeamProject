@@ -1,0 +1,51 @@
+.good-foods {
+ margin-left: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .food-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .food-list li {
+    margin-bottom: 30px;
+  }
+  
+  .food-list h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .food-list p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .img-section {
+   
+    margin-bottom: 30px;
+  }
+  
+  .img-section {
+    max-width: 100%;
+    height: auto;
+    margin-right: 15%;
+    
+  }
+
+ .button{
+
+  
+   border: 10px solid skyblue;
+   padding: 5px;
+   margin-bottom: 10%;
+   background-color: skyblue;
+    
+}
+  

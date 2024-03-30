@@ -1,0 +1,53 @@
+/* Style for bad foods component */
+
+.bad-foods {
+    margin: 20px;
+  }
+  
+  .title-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-section h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .bad-foods-list {
+    list-style-type: none;
+  }
+  
+  .bad-foods-list li {
+    margin-bottom: 30px;
+  }
+  
+  .bad-foods-list li h2 {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .bad-foods-list li p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+  }
+  .img-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .img-section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 30%;
+  }
+  .button{
+
+  
+    border: 10px solid skyblue;
+    padding: 5px;
+    margin-bottom: 10%;
+    background-color: skyblue;
+     
+ }
