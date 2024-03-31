@@ -99,7 +99,7 @@ const MorningSkinCare = () => {
 
            
             </div>
-            <button className="button-center"> <Link to="/skinCareRoutin">Your Skin Care Routine </Link> </button>
+            <button className="button"> <Link to="/skinCareRoutin">Your Skin Care Routine </Link> </button>
         </div>
     );
 };
