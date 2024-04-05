@@ -1,0 +1,35 @@
+.appointments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .appointment-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .appointment-content {
+    display: flex;
+  }
+  
+  .appointment-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+  
+  .appointment-details {
+    margin-left: 20px;
+  }
+  

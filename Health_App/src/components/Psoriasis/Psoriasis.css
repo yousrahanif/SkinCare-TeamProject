@@ -1,0 +1,31 @@
+.psoriasis-overview {
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .psoriasis-overview img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .psoriasis-overview ul {
+    list-style-type: disc;
+    margin-left: 20px; 
+  }
+  

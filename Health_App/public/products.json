@@ -1,0 +1,818 @@
+{
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser1",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Cetaphil Gentle Skin Cleanser",
+            "image": "https://m.media-amazon.com/images/I/41Bh5wBU9TL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Normal Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser2",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "La Roche-Posay Effaclar Purifying Foaming Gel",
+            "image": "https://m.media-amazon.com/images/I/61zxjkJE93L._SX522_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Oily Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser3",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Origins Checks and Balances Frothy Face Wash",
+            "image": "https://m.media-amazon.com/images/I/21a1FumJDxL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Combination Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser4",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Aveeno Ultra-Calming Hydrating Gel Cleanser",
+            "image": "https://m.media-amazon.com/images/I/31BfWFA4vYL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Dry/Dehydrated Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser5",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Vanicream Gentle Facial Cleanser",
+            "image": "https://m.media-amazon.com/images/I/319pG+OQZxL._SY300_SX300_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Sensitive Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser6",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Neutrogena Oil-Free Acne Wash",
+            "image": "https://m.media-amazon.com/images/I/31X5JANLPtL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Acne-Prone Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "cleanser7",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "cleanser",
+                "display": "Cleanser"
+              }
+            ],
+            "text": "Paula's Choice Skin Recovery Softening Cream Cleanser",
+            "image": "https://m.media-amazon.com/images/I/315yFxzXmtL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Mature Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer1",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+            "text": "Cetaphil Daily Hydrating Lotion",
+            "image": "https://m.media-amazon.com/images/I/31SsHpxfFNL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Normal Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer2",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+        "text": "Neutrogena Hydro Boost Water Gel",
+            "image": "https://m.media-amazon.com/images/I/41+GljBl9UL._SY300_SX300_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Oily Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer3",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+            "text": "First Aid Beauty Ultra Repair Cream Intense Hydration",
+            "image": "https://m.media-amazon.com/images/I/41j79JGEQAL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Combination Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer4",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+            "text": "Aveeno Daily Moisturizing Lotion",
+            "image": "https://m.media-amazon.com/images/I/31VUmGM3HFL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Dry/Dehydrated Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer5",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+     "text": "Vanicream Moisturizing Skin Cream",
+            "image": "https://m.media-amazon.com/images/I/316CeWcqtRL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Sensitive Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer6",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+            "text": "Paula's Choice Clear Oil-Free Moisturizer",
+            "image": "https://m.media-amazon.com/images/I/31LqzWIieYL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Acne-Prone Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "moisturizer7",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "moisturizer",
+                "display": "Moisturizer"
+              }
+            ],
+            "text": "Drunk Elephant Protini Polypeptide Cream",
+            "image": "https://m.media-amazon.com/images/I/31yQ+bPljvL._SY300_SX300_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "dry",
+                      "display": "Dry"
+                    }
+                  ],
+                  "text": "Mature Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen1",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "EltaMD UV Clear Broad-Spectrum SPF 46",
+            "image": "https://m.media-amazon.com/images/I/3154Ef7XYcL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Normal Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen2",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "La Roche-Posay Anthelios Clear Skin Dry Touch Sunscreen SPF 60",
+            "image": "https://m.media-amazon.com/images/I/41m7tdXv3GL._SY445_SX342_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Oily Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen3",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "Aveeno Protect + Hydrate Face Sunscreen SPF 50",
+            "image": "https://m.media-amazon.com/images/I/51KfxVUXoiL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Combination Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen4",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "Cetaphil Daily Facial Moisturizer with Sunscreen SPF 50",
+            "image": "https://m.media-amazon.com/images/I/41D00Z7KptL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Dry/Dehydrated Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen5",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "Vanicream Sunscreen SPF 30",
+            "image": "https://m.media-amazon.com/images/I/31HxvkkD7lL._SX300_SY300_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Sensitive Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen6",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "EltaMD UV Clear Broad-Spectrum SPF 46",
+            "image": "https://m.media-amazon.com/images/I/41-Czl9pdyL._SY445_SX342_QL70_FMwebp_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Acne-Prone Skin"
+                }
+              ]
+            }
+          ]
+        }
+      },{
+        "resource": {
+          "resourceType": "Medication",
+          "id": "sunscreen7",
+          "code": {
+            "coding": [
+              {
+                "system": "http://example.com/skincare",
+                "code": "sunscreen",
+                "display": "Sunscreen"
+              }
+            ],
+            "text": "Shiseido Urban Environment Oil-Free UV Protector SPF 50+",
+            "image": "https://m.media-amazon.com/images/I/61ixhCmb8pL._SX522_.jpg"
+          },
+          "extension": [
+            {
+              "url": "http://example.com/skincare#skinTypes",
+              "valueCodeableConcept": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "normal",
+                      "display": "Normal"
+                    },
+                    {
+                      "system": "http://example.com/skintypes",
+                      "code": "combination",
+                      "display": "Combination"
+                    }
+                  ],
+                  "text": "Mature Skin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

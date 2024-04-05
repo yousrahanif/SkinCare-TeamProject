@@ -1,0 +1,37 @@
+.eczema-overview {
+    margin: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .eczema-overview h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .eczema-overview p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .eczema-overview ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .eczema-overview .section {
+    margin-bottom: 30px;
+  }
+  
+  .eczema-overview .section h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  .eczema-overview img{
+    display: block;
+    max-width: 40%;
+    margin: 20px auto;
+  }
+  
