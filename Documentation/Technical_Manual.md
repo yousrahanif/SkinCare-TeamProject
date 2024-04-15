@@ -4,11 +4,11 @@
 2. **Navigate to the project directory.**
 3. **Install dependencies** using `npm install`.
 4. **Run the backend server (if applicable):**
-   - Navigate to the server directory (if separate).
+   - Navigate to the server directory (Health_App Server).
    - Install server dependencies using `npm install`.
    - Start the server using `npm start` or `nodemon index.js`.
-5. **Navigate to the** `client` **directory.**
-6. **Install client dependencies** using `npm install`.
+5. **Navigate to the** `Health_App` **directory.**
+6. **Install dependencies** using `npm install`.
 7. **Run the frontend server** using `npm run dev`.
 
 
